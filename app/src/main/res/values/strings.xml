@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">KotlinCalcRudoi</string>
+    <string name="invalidData">invalid data</string>
+    <string name="arc_length">arc length</string>
+    <string name="angle">angle</string>
+    <string name="chord">chord</string>
+    <string name="square">square</string>
+    <string name="first_number">1N</string>
+    <string name="second_number">2N</string>
+    <string name="answer">answer</string>
+    <string name="rad">R</string>
+</resources>
+

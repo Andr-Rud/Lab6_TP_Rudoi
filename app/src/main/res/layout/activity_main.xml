@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B0AFA7A1"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="395dp"
+        android:layout_height="347dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numThird"
+        app:layout_constraintVertical_bias="0.762"
+        tools:ignore="MissingConstraints,NotSibling">
+
+        <TableRow
+            android:id="@+id/tableRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="3dp"
+            tools:ignore="DuplicateIds">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/toAdd"
+                android:layout_width="78dp"
+                android:layout_height="64dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/green_button"
+                android:onClick="addPlusAction"
+                android:text="+"
+                android:textColor="#F6F2F2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/toMinus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/green_button"
+                android:onClick="addMinusActionOperation"
+                android:text="-"
+                android:textColor="#F6F2F2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/toMultiply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/green_button"
+                android:onClick="addMultiplyAction"
+                android:text="*"
+                android:textColor="#F6F2F2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/toDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/green_button"
+                android:onClick="addDeleteAction"
+                android:text="/"
+                android:textColor="#F6F2F2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/numFirst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/for_button"
+                android:onClick="numFirstAction"
+                android:text="1"
+                android:textColor="#F6F2F2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/numSecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/for_button"
+                android:onClick="numSecondAction"
+                android:text="2"
+                android:textColor="#F6F2F2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/numThird"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/for_button"
+                android:onClick="numThirdAction"
+                android:text="3"
+                android:textColor="#F6F2F2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/blue_button"
+                android:onClick="addMinusAction"
+                android:text="-N"
+                android:textColor="#F6F2F2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/numFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/for_button"
+                android:onClick="numFourAction"
+                android:text="4"
+                android:textColor="#F6F2F2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/numFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/for_button"
+                android:onClick="numFiveAction"
+                android:text="5"
+                android:textColor="#F6F2F2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/numSix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/for_button"
+                android:onClick="numSixAction"
+                android:text="6"
+                android:textColor="#F6F2F2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/addFirst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/pink_button"
+                android:onClick="addFirstAction"
+                android:text="@string/first_number"
+                android:textColor="#F6F2F2" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/numSeven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/for_button"
+                android:onClick="numSevenAction"
+                android:text="7"
+                android:textColor="#F6F2F2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/numEight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/for_button"
+                android:onClick="numEightAction"
+                android:text="8"
+                android:textColor="#F6F2F2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/numNine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/for_button"
+                android:onClick="numNineAction"
+                android:text="9"
+                android:textColor="#F6F2F2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/addSecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/pink_button"
+                android:onClick="addSecondAction"
+                android:text="@string/second_number"
+                android:textColor="#F6F2F2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/addDot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/blue_button"
+                android:onClick="addDotAction"
+                android:text="."
+                android:textColor="#F6F2F2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/numZero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/for_button"
+                android:onClick="numZeroAction"
+                android:text="0"
+                android:textColor="#F6F2F2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/delNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/red_button"
+                android:onClick="delNumAction"
+                android:text="del"
+                android:textColor="#F6F2F2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/giveAnswer"
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/pink_button"
+                android:onClick="giveAnswerAction"
+                android:text="="
+                android:textColor="#F6F2F2" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="402dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/firstNumView"
+            android:layout_width="155dp"
+            android:layout_height="32dp"
+            android:layout_weight="2"
+            android:text="0"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/operationView"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:layout_weight="1"
+            android:text="+"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/secondNumView"
+            android:layout_width="155dp"
+            android:layout_height="34dp"
+            android:layout_weight="3"
+            android:text="0"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/theSameView"
+            android:layout_width="20dp"
+            android:layout_height="36dp"
+            android:layout_weight="0"
+            android:text="="
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/answerView"
+            android:layout_width="201dp"
+            android:layout_height="49dp"
+            android:layout_marginBottom="108dp"
+            android:layout_weight="3"
+            android:text="0"
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/deleteAll"
+        android:layout_width="72dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/red_button"
+        android:onClick="deleteAllAction"
+        android:text="C"
+        android:textColor="#EEEBEC"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/enterNumView"
+        android:layout_width="251dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="28dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.703"
+        app:layout_constraintStart_toEndOf="@+id/deleteAll"
+        tools:ignore="MissingConstraints" />
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="385dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="130dp"
+        app:layout_constraintBottom_toTopOf="@+id/enterNumView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/rad" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/arc_length" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/angle" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chord" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/editR"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/editArcLength"
+                android:layout_width="80dp"
+                android:layout_height="43dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/editAngle"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/editChord"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="391dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="49dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/enterNumView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="72dp"
+            android:layout_height="33dp"
+            android:text="@string/square" />
+
+        <TextView
+            android:id="@+id/squareAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/answer" />
+
+        <Button
+            android:id="@+id/arc_length_square"
+            android:layout_width="46dp"
+            android:layout_height="50dp"
+            android:onClick="countSquareArcLength"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/angle_square"
+            android:layout_width="44dp"
+            android:layout_height="48dp"
+            android:onClick="countSquareAngle"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/chord_square"
+            android:layout_width="49dp"
+            android:layout_height="47dp"
+            android:onClick="countSquareChord"
+            android:text="3" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

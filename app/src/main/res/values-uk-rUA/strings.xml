@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KotlinCalcRudoi</string>
+    <string name="invalidData">неправильні дані</string>
+    <string name="arc_length">довжина дуги</string>
+    <string name="angle">кут</string>
+    <string name="chord">хорда</string>
+    <string name="square">площа</string>
+    <string name="first_number">1Н</string>
+    <string name="second_number">2Н</string>
+    <string name="answer">відповідь</string>
+    <string name="rad">Р</string>
+</resources>
